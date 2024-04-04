@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <List />
       <Search />
-      <Main />
+      
       <Otherdays />
       
     </div>
