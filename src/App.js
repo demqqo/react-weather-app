@@ -7,13 +7,15 @@ import Otherdays from "./otherdays"
 import Git from "./git"
 
 function App() {
-  return (
+  return (<div>
     <div className="App">
       <List />
       <Search />
       <Main />
       <Otherdays />
-      <Git />
+      
+    </div>
+    <Git />
     </div>
   );
 }
