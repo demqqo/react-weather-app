@@ -10,8 +10,7 @@ function App() {
   return (<div>
     <div className="App">
       <List />
-      <Search />
-      
+      <Search city={"Lisbon"}/>
       <Otherdays />
       
     </div>
