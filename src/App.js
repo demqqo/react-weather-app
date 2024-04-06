@@ -2,7 +2,6 @@
 import './App.css'
 import List from "./list"
 import Search from "./search"
-import Main from "./main"
 import Otherdays from "./otherdays"
 import Git from "./git"
 

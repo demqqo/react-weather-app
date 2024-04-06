@@ -4,15 +4,14 @@ import Main from "./main"
 export default function Search(props){
 
     let [city, setCity] = useState(props.city) 
-    let [city1, setCity1] = useState(` `)
+    let [city1, setCity1] = useState(`Bali`)
     
     
     const handleSubmit=(e)=>{
         e.preventDefault();
         
-        setCity(city1)
         
-console.log(city)
+        setCity(city1)
     }
     return(
         <div className="flex-container" >
