@@ -5,7 +5,7 @@ import Main from "./main"
 
 export default function List(props){
     let [city,setCity] = useState(` `)
-    let [city1,setCity1] = useState("Sydney")
+    let [city1,setCity1] = useState("Kambera")
     const handleSubmit=(e)=>{
 e.preventDefault();
 setCity1(city)
