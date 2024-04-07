@@ -17,7 +17,7 @@ export default function Main(props){
 let URL = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${props.city}`
 axios.get(`${URL}`).then(function (response){
     setImgurl(response.data.current.condition.icon);
-    setPrecipitation(`${Math.round(response.data.current.precip_mm)} mm`);
+    setPrecipitation(`${Math.round(response.data.current.humidity)} %`);
     setWind(`${Math.round(response.data.current.wind_kph)}`)
     setTemperature(`${Math.round(response.data.current.temp_c)}°C`);
     setCondition(response.data.current.condition.text)
