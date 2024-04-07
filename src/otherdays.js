@@ -17,9 +17,9 @@ const [img3, setImg3] = useState(" ")
 
 axios.get(`${url}`).then(function(response){
     
-        setTemp1(Math.round(response.data.forecast.forecastday[0].day.maxtemp_c))
-        setTemp2(Math.round(response.data.forecast.forecastday[1].day.maxtemp_c))
-        setTemp3(Math.round(response.data.forecast.forecastday[2].day.maxtemp_c))
+        setTemp1(Math.round(response.data.forecast.forecastday[0].day.maxtemp_c) + "°C")
+        setTemp2(Math.round(response.data.forecast.forecastday[1].day.maxtemp_c)  + "°C")
+        setTemp3(Math.round(response.data.forecast.forecastday[2].day.maxtemp_c)  + "°C")
         setDay1(moment(response.data.forecast.forecastday[0].date).format('dddd'))
         setDay2(moment(response.data.forecast.forecastday[1].date).format('dddd'))
         setDay3(moment(response.data.forecast.forecastday[2].date).format('dddd'))
