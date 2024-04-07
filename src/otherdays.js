@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import axios from "axios"
 import moment from "moment"
 export default function Otherdays(props){
-    let key=`baf054037a66413c8db15210241703`
+let key=`baf054037a66413c8db15210241703`
 let url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${props.city}&days=3`
 const [temp1, setTemp1] = useState(" ")
 const [temp2, setTemp2] = useState(" ")

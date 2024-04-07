@@ -8,7 +8,7 @@ import Git from "./git"
 function App() {
   return (<div>
     <div className="App">
-      <List />
+      <List city="Lisbon"/>
       
       
     </div>
