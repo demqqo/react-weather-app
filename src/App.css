@@ -87,6 +87,17 @@ cursor: pointer;
 }
 .other-days{
   margin:0 2em 0 2em;
+
+}
+.other-days .day, .degree{
+  
+  text-align: center;
+}
+.other-days img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .auto{
   flex: auto;
