@@ -46,6 +46,7 @@ setHour(example.substring(example.lastIndexOf(" ") + 1));
                 </ul>
 
             </div>
+            <Otherdays city={city}/>
             
         </div>
         

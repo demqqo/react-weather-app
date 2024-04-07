@@ -17,6 +17,8 @@ console.log(city)
             <input className="item none" type="submit" value="Sydney"onClick = { (e) => setCity(e.target.value)} />
             <input className="item none" type="submit"value="San Francisco"onClick = { (e) => setCity(e.target.value)} /></form>
             {/*<Search city={city}/>*/}
+            
+            </div><Search city={city1} key={city1}/>
         </div>
     )
 }
