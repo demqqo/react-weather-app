@@ -14,12 +14,20 @@ export default function Search(props){
   
   
     let [city, setCity] = useState(props.city) 
-    let [city1, setCity1] = useState(`Bali`)
-    
+    let [city1, setCity1] = useState(props.city)
+    console.log(city + 11)
     
     const handleSubmit=(e)=>{
+        
+        
+        
         e.preventDefault();
         
+        if(city1){
+        setCity(city1)}else{
+            alert("Enter a city)")
+        }
+    }
     const handleCurent=(e)=>{
         e.preventDefault();
         
