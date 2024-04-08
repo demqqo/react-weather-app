@@ -2,17 +2,16 @@ import React, {useState} from "react"
 import "./App.css"
 import Main from "./main"
 import axios from "axios"
-export default function Search(props){
-    
-    const [lat, setLat] = useState(65)
-    const [lon, setLon] = useState(45)
-    const [city2, setCity2] = useState(" toronto ")
 
-  let key = "AIzaSyA6AGrPnASatY4WeXcV84lG2k9eycEBYt4"
-  let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&sensor=true&key=${key}`
-  
-  
-  
+export default function Search(props){
+  //console.log(precess.env );
+    
+  const [lat, setLat] = useState(65)
+  const [lon, setLon] = useState(45)
+  const [city2, setCity2] = useState(" toronto ")
+
+const[key, setKey] = useState("AIzaSyA6AGrPnASatY4WeXcV84lG2k9eycEBYt4")
+let url = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&sensor=true&key=${key}`
     let [city, setCity] = useState(props.city) 
     let [city1, setCity1] = useState(props.city)
     console.log(city + 11)
@@ -30,8 +29,8 @@ export default function Search(props){
     }
     const handleCurent=(e)=>{
         e.preventDefault();
-        
-        
+
+       
         getLocation()
 
 function getLocation() {
@@ -50,6 +49,7 @@ setCity((city2).split(" ")[1])}})
      alert("Geolocation is not supported by this browser.");
     }
   }
+        
 
     }
     
