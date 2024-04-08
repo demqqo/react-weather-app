@@ -34,17 +34,17 @@ axios.get(`${url}`).then(function(response){
         <ul className="flex-container">
         <li className="auto"><div className="other-days"> 
             <div className="day">{day1}</div>
-            <img src={img1}/>
+            <img alt="ico for other days" src={img1}/>
             <div className="degree">{temp1}</div>
             </div></li>
         <li className="auto"><div className="other-days"> 
             <div className="day">{day2}</div>
-            <img src={img2}/>
+            <img alt="ico for other days" src={img2}/>
             <div className="degree">{temp2}</div>
             </div></li>
         <li className="auto"><div className="other-days"> 
             <div className="day">{day3}</div>
-            <img src={img3}/>
+            <img alt="ico for other days" src={img3}/>
             <div className="degree">{temp3}</div>
             </div></li>
         </ul>
