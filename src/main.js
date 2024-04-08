@@ -23,9 +23,12 @@ axios.get(`${URL}`).then(function (response){
     setCondition(response.data.current.condition.text)
    setDate(response.data.location.localtime)
    setCity(response.data.location.name)
-   var day = moment("2024-04-06").day(); // for the number
-   day = moment("2024-04-06").format('dddd'); // for the word
-   setDay(day)
+  
+  setDay((response.data.location.localtime).substring(0, (response.data.location.localtime).indexOf(" ")))
+  
+   var day1 = moment("2024-04-06").day(); 
+   day1 = moment(day).format('dddd');
+   setDate(day1)
    let example = response.data.location.localtime;
 setHour(example.substring(example.lastIndexOf(" ") + 1));
 })
@@ -34,7 +37,7 @@ setHour(example.substring(example.lastIndexOf(" ") + 1));
             
             <div className="flex-container">
                 <ul><li><h1>{city} {temperature}</h1></li>
-                <li>{hour} {day}</li>
+                <li>{hour} {date}</li>
                 <li>{condition}</li></ul>
             </div>
             <div className="flex-container">
